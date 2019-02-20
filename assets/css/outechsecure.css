@@ -1,0 +1,102 @@
+html, body {
+	background-color: #f7f7f7;
+}
+
+.modal-header {
+	padding-left: 30px;
+	margin-bottom: 0;
+	background-color: #4ddbff;
+}
+
+.modal-title {
+	font-weight: 100;
+}
+
+.card .title {
+	font-size: 16px;
+	font-weight: 600;
+	color: #669999;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	background-color: #f7f7f7;
+}
+
+.section-title p {
+	font-size: 36px;
+	font-weight: 100;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.jumbotron {
+	background-image: url(../img/jumbotronimg.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: purple;
+    margin-bottom: 80px;
+}
+
+.carousel-caption h2 {
+	font-weight: 700;
+	font-size: 45px;
+}
+
+#attnGrabber p {
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+#attnGrabber {
+	background-color: #a6a6a6;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 70px;
+}
+
+.card-price-features {
+	font-size: 14px;
+	font-weight: 600;
+	color: #9A9A9A;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#getInTouch form {
+	margin-bottom: 60px;
+}
+
+.card-price .list-unstyled {
+	font-size: 20px;
+}
+
+.price-card-icon {
+	margin-top: 20px;
+}
+
+.card-price .fa {
+	font-size: 36px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+.just-some-extra-margin {
+	margin-bottom: 25px;
+}
+
+.btn-fleet {
+	border-color: #cc00cc;
+	color: #cc00cc;
+}
+
+.btn-fleet:hover {
+	border-color: #800080;
+	color: #800080;
+}
