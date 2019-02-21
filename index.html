@@ -42,7 +42,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-            <li class="active">
+            <li>
                 <a href="#">
                      Home
                 </a>
@@ -52,15 +52,14 @@
                      About Us
                 </a>
             </li>
-            <li>
-                <a href="#ourServices">
-                     Services
-                </a>
-            </li>
-            <li>
-                <a href="#trackingService">
-                     Tracking
-                </a>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#trackingService">Vehicle Tracking</a></li>
+                    <li><a href="#ourServices">Software Development</a></li>
+                    <li><a href="#ourServices">E-Payment Solutions</a></li>
+                     <li><a href="#ourServices">ICT Solutions</a></li>
+                  </ul>
             </li>
             <li>
                 <a href="#ourPrices">
@@ -135,11 +134,11 @@
 
   <!-- About Us -->
 
-  <div id="aboutUs" class="section-title text-center">
+  <div id="aboutUs" class="container section-title text-center">
     <p>VEHICLE & MOBILE ASSETS TRACKING</p>
   </div>
 
-  <div class="container">
+  <div class="container text-center">
     <div class="jumbotron">
       <h2>OUTECH SECURE IS THE TRACKING COMPANY OTHER TRACKING COMPANIES RUN TO.</h2>
         <p>With over 15 years of exceptional vehicle tracking, there are a few tracking companies that come close to matching our track record. Over the years, we have demonstrated that we are a tracking company our clients and stakeholders can always count on to deliver peace of mind when it comes to asset security and recovery. What do we have going for us? High-caliber Partnerships, Cutting-edge Technology and Superior Processes.</p>
@@ -147,12 +146,146 @@
     </div>
   </div>
 
+  <!-- Begin tracking service section -->
+
+  <div class="section-violet">
+
+  <div id="trackingService" class="container section-title text-center">
+    <p>YOU’VE GOT TO DO IT AND YOU’VE GOT TO DO IT RIGHT.</p>
+  </div>
+
+  <div class="container text-center tracking-description">
+    <p>Do not find out the hard way that a less than optimal vehicle tracking is as good as no vehicle tracking. And you know what? No vehicle tracking is extremely risky if not suicidal. Do not risk it, by the time you find out, it may be too late.</p>
+  </div>
+
+  <div class="container text-center">
+    <div class="card card-background">
+        <div class="image">
+            <img src="assets/img/payment2.jpg" alt="Tracking Image"/>
+            <!-- <div class="filter"></div> -->
+        </div>
+        <div class="footer">
+                <a href="#ourPrices" class="btn btn-fill btn-primary btn-warning">
+                   Take action now
+                </a>
+        </div>
+    </div> <!-- end card -->
+  </div>
+
+  <!-- Begin Acordeon -->
+
+  <div class="container text-center tracking-description">
+    <p>Take time to find out some of the very important features of our vehicle tracking services.</p>
+  </div>
+  <div class="container" id="acordeonBottom">
+    <div class="row">
+      <div id="acordeon">
+          <div class="panel-group" id="accordion">
+      <div class="col-md-6">
+      
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseOne" href="#collapseOne" data-toggle="gsdk-collapse">
+                    REAL TIME VEHICLE TRACKING
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  What good is tracking if it cannot provide you with up to the minute information about your vehicle? At Outech Secure, we understand this that’s why we are always at our best ensuring uninterrupted availability of service.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseTwo" href="#collapseTwo" data-toggle="gsdk-collapse">
+                    NATIONWIDE COVERAGE
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  When it comes to tracking, nobody covers Nigeria like we do. Our top notch infrastructures coupled with buoyant telecommunication backbone give us the most extensive reach.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseThree" href="#collapseThree" data-toggle="gsdk-collapse">
+                    WEB AND MOBILE ACCESS
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  We put at your fingertips, the power to be part of the action with our intuitive and user friendly web and mobile apps. Trip History, Vehicle control, Up to the minute reports all available on the go.
+                </div>
+              </div>
+            </div>
+          <!-- </div>
+      </div> -->
+    </div>
+    <div class="col-md-6">
+      <!-- <div id="acordeon">
+          <div class="panel-group" id="accordion"> -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseFour" href="#collapseFour" data-toggle="gsdk-collapse">
+                    REMOTE IMMOBILIZATION
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                  One other key feature of our services is the ability to remotely shut down vehicles depending on situation. This important feature is also in the control of the client.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseFive" href="#collapseFive" data-toggle="gsdk-collapse">
+                    SPEED MONITOR & REPORTING
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                  All tracking services come with the ability to monitor vehicle speed and get periodic reports whenever set speed limits are reached. Like is standard with our services, clients also get control to set the speed limit as they wish.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                  <a data-target="#collapseSix" href="#collapseSix" data-toggle="gsdk-collapse">
+                    CONTROL CENTRE ASSISTED RECOVERY
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                  This feature demonstrates the full power of the outech secure vehicle tracking service. A vibrant workforce, cutting-edge technology equipment and clever procedures all converge to ensure that we always have any situation under control.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div> <!--  end acordeon -->
+
+  </div>
 <!-- Pricing -->
 
     <div class="section section-white" id="plain-price-cards">
 
       <div class="just-some-extra-margin">
-        <div id="ourPrices" class="section-title text-center">
+        <div id="ourPrices" class="container section-title text-center">
           <p>WHAT TRACKING PACKAGE IS RIGHT FOR ME?</p>
         </div>
       </div>
@@ -258,7 +391,7 @@
 
         <!-- Services -->
 
-  <div id="ourServices" class="section-title text-center">
+  <div id="ourServices" class="container section-title text-center">
     <p>OUTCOM TECHNOLOGIES IS SO MUCH MORE</p>
   </div>
 
@@ -348,60 +481,6 @@
       </div>
       
       <!-- end contact us -->
-
-  <!-- Begin Acordeon -->
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-6">
-      <div id="acordeon">
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-target="#collapseOne" href="#collapseOne" data-toggle="gsdk-collapse">
-                    ICT Consultancy, Services and Training
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse">
-                <div class="panel-body">
-                  Outcom Technologies being a full-fledged technology company offers the best in class ICT solutions. We provide consultancy services tailored to power and drive businesses, taking them from where they currently are to where they desire to be.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-target="#collapseTwo" href="#collapseTwo" data-toggle="gsdk-collapse">
-                    Software Development
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                  One of the important ways we enable businesses reach their potentials is through our portfolio of apps and software engineered to optimize business processes. Our very competent team of developers in collaborations with renowned technology companies are always prepared to deliver the superlative solutions for a wide range of industries.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapseThree">
-                    E-payment solutions
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                  Businesses in a bid to provide their customers with more convenient payment options are turning to E-payment. As a technology company with the primary aim of helping businesses succeed, we offer the most advanced and secure E-payment solutions to ensure both our clients and their customers are adequately protected.
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    </div>
-  </div> --> <!--  end acordeon -->
 
   <!-- Beging footer -->
 
@@ -511,20 +590,20 @@
           </div>
           <div class="modal-body">
             <ul>
-              <li>* Nationwide Coverage</li>
-              <li>* Real Time Speed Recording</li>
-              <li>* Full Installation</li>
-              <li>* Location Reporting</li>
-              <li>* Remote Immobilization</li>
-              <li>* Backup Battery</li>
-              <li>* Power Monitor</li>
-              <li>* Covert Voice Monitor</li>
-              <li>* Speed Limit Monitor</li>
-              <li>* Trip Monitor</li>
-              <li>* Programmable Geo-Fencing Report</li>
-              <li>* Fuel Monitoring</li>
-              <li>* Control Centre Assistance for Recovery</li>
-              <li>* Additional Features</li>
+              <li> Nationwide Coverage</li>
+              <li> Real Time Speed Recording</li>
+              <li> Full Installation</li>
+              <li> Location Reporting</li>
+              <li> Remote Immobilization</li>
+              <li> Backup Battery</li>
+              <li> Power Monitor</li>
+              <li> Covert Voice Monitor</li>
+              <li> Speed Limit Monitor</li>
+              <li> Trip Monitor</li>
+              <li> Programmable Geo-Fencing Report</li>
+              <li> Fuel Monitoring</li>
+              <li> Control Centre Assistance for Recovery</li>
+              <li> Additional Features</li>
             </ul>      
           </div>
           <div class="modal-footer">
@@ -547,12 +626,12 @@
           </div>
           <div class="modal-body">
             <ul>
-              <li>* Nationwide Coverage</li>
-              <li>* Full Installation</li>
-              <li>* 24hrs Real time Vehicle location update</li>
-              <li>* Remote Immobilization</li>
-              <li>* Backup Battery *Power Monitor</li>
-              <li>* Control Centre Assistance for Recovery</li>
+              <li> Nationwide Coverage</li>
+              <li> Full Installation</li>
+              <li> 24hrs Real time Vehicle location update</li>
+              <li> Remote Immobilization</li>
+              <li> Backup Battery *Power Monitor</li>
+              <li> Control Centre Assistance for Recovery</li>
             </ul>
           </div>
           <div class="modal-footer">
@@ -575,20 +654,20 @@
           </div>
           <div class="modal-body">
             <ul>
-              <li>* Nationwide Coverage</li>
-              <li>* Real Time Speed Recording</li>
-              <li>* Full Installation</li>
-              <li>* History/Playback</li>
-              <li>* Web Access</li>
-              <li>* Location Reporting</li>
-              <li>* Remote Immobilization</li>
-              <li>* Backup Battery</li>
-              <li>* Power Monitor</li>
-              <li>* Covert Voice Monitor</li>
-              <li>* Speed Limit Monitor</li>
-              <li>* Trip Monitor</li>
-              <li>* Programmable Geo-Fencing Report</li>
-              <li>* Control Centre Assistance for Recovery</li>
+              <li> Nationwide Coverage</li>
+              <li> Real Time Speed Recording</li>
+              <li> Full Installation</li>
+              <li> History/Playback</li>
+              <li> Web Access</li>
+              <li> Location Reporting</li>
+              <li> Remote Immobilization</li>
+              <li> Backup Battery</li>
+              <li> Power Monitor</li>
+              <li> Covert Voice Monitor</li>
+              <li> Speed Limit Monitor</li>
+              <li> Trip Monitor</li>
+              <li> Programmable Geo-Fencing Report</li>
+              <li> Control Centre Assistance for Recovery</li>
             </ul>   
           </div>
           <div class="modal-footer">
@@ -611,23 +690,23 @@
           </div>
           <div class="modal-body">
             <ul>
-              <li>* Nationwide Coverage</li>
-              <li>* Real Time Speed Recording</li>
-              <li>* Full Installation</li>
-              <li>* History/Playback</li>
-              <li>* Web Access</li>
-              <li>* Location Reporting</li>
-              <li>* Remote Immobilization</li>
-              <li>* Backup Battery</li>
-              <li>* Power Monitor</li>
-              <li>* Covert Voice Monitor</li>
-              <li>* Speed Limit Monitor</li>
-              <li>* Trip Monitor</li>
-              <li>* Fuel Monitor</li>
-              <li>* Programmable Geo-Fencing Report</li>
-              <li>* Special System Admin Access</li>
-              <li>* Group Account</li>
-              <li>* Control Centre Assistance for Recovery</li>
+              <li> Nationwide Coverage</li>
+              <li> Real Time Speed Recording</li>
+              <li> Full Installation</li>
+              <li> History/Playback</li>
+              <li> Web Access</li>
+              <li> Location Reporting</li>
+              <li> Remote Immobilization</li>
+              <li> Backup Battery</li>
+              <li> Power Monitor</li>
+              <li> Covert Voice Monitor</li>
+              <li> Speed Limit Monitor</li>
+              <li> Trip Monitor</li>
+              <li> Fuel Monitor</li>
+              <li> Programmable Geo-Fencing Report</li>
+              <li> Special System Admin Access</li>
+              <li> Group Account</li>
+              <li> Control Centre Assistance for Recovery</li>
             </ul>       
           </div>
           <div class="modal-footer">
@@ -664,11 +743,11 @@
     <!--  Get Shit Done Kit PRO methods used for demo purpose      -->
     <script src="assets/js/demo.js"></script>
     	
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $().ready(function(){
             $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
         });       
-    </script>
+    </script> -->
     
     <!-- If you are using TypeKit.com uncomment this code otherwise you can delete it -->
     <!--
