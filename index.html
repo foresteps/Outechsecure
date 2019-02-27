@@ -1,295 +1,391 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<title>OUTCOM Technologies And Security Systems Limited</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>OUTCOM Technologies And Security Systems Limited</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    
+
     <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/gsdk.css" rel="stylesheet"/>
-    
-    <link href="assets/css/demo.css" rel="stylesheet" /> 
+    <link href="assets/css/gsdk.css" rel="stylesheet" />
+
+    <link href="assets/css/demo.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/outechsecure.css">
-        
+
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> 
-    <link href='https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300' rel='stylesheet' type='text/css'>  
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <!-- Optional - Adds useful class to manipulate icon font display -->
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke/css/helper.css">
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button id="menu-toggle" type="button" class="navbar-toggle">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar bar1"></span>
         <span class="icon-bar bar2"></span>
         <span class="icon-bar bar3"></span>
       </button>
-      <a class="navbar-brand" href="#">OUTECHSECURE</a>
-    </div>
+                <a class="navbar-brand" href="#">OUTECHSECURE</a>
+            </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-            <li>
-                <a href="#">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
                      Home
                 </a>
-            </li>
-            <li>
-                <a href="#aboutUs">
+                    </li>
+                    <li>
+                        <a href="#aboutUs">
                      About Us
                 </a>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#trackingService">Vehicle Tracking</a></li>
-                    <li><a href="#ourServices">Software Development</a></li>
-                    <li><a href="#ourServices">E-Payment Solutions</a></li>
-                     <li><a href="#ourServices">ICT Solutions</a></li>
-                  </ul>
-            </li>
-            <li>
-                <a href="#ourPrices">
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#trackingService">Vehicle Tracking</a></li>
+                            <li><a href="#ourServices">Software Development</a></li>
+                            <li><a href="#ourServices">E-Payment Solutions</a></li>
+                            <li><a href="#ourServices">ICT Solutions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#ourPrices">
                      Pricing
                 </a>
-            </li>
-            <li>
-                <a href="#getInTouch">
+                    </li>
+                    <li>
+                        <a href="#getInTouch">
                      Contact Us
                 </a>
-            </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<div class="wrapper">
-    <!-- Carousel 100% Fullscreen -->
-  <div id="carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    
-    <div class="carousel-inner">
-      <div class="item bg bg1 active">
-        <img src="assets/img/myslide4.jpg" alt="Awesome Image">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>ICT Solutions.</h2>
-            <!-- <p>Your one stop shop for essential technology solutions.</p> -->
-            <p><a class="btn btn-lg btn-fill btn-info" href="#" role="button">Learn more</a></p>
-          </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <div class="item bg bg2">
-        <img src="assets/img/software7.jpg" alt="Awesome Image">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>E-Payment Solutions</h2>
-            <!-- <p>This means you have our unwavering assurance of delivering results without “e”xcuses.</p> -->
-            <p><a class="btn btn-lg btn-fill btn-info" href="#services" role="button">Learn more</a></p>
-          </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="wrapper">
+        <!-- Carousel 100% Fullscreen -->
+        <div id="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item bg bg1 active">
+                        <img src="assets/img/myslide4.jpg" alt="Awesome Image">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>ICT Solutions.</h2>
+                                <!-- <p>Your one stop shop for essential technology solutions.</p> -->
+                                <p><a class="btn btn-lg btn-fill btn-info" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg bg2">
+                        <img src="assets/img/software7.jpg" alt="Awesome Image">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>E-Payment Solutions</h2>
+                                <!-- <p>This means you have our unwavering assurance of delivering results without “e”xcuses.</p> -->
+                                <p><a class="btn btn-lg btn-fill btn-info" href="#services" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg bg1">
+                        <img src="assets/img/myslide1.jpg" alt="Awesome Image">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>Software Development</h2>
+                                <p><a class="btn btn-lg btn-fill btn-info" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
         </div>
-      </div>
-      <div class="item bg bg1">
-        <img src="assets/img/myslide1.jpg" alt="Awesome Image">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>Software Development</h2>
-            <p><a class="btn btn-lg btn-fill btn-info" href="#" role="button">Learn more</a></p>
-          </div>
+        <!-- /end Carousel 100% Fullscreen -->
+
+        <!-- Home -->
+
+        <div id="attnGrabber" class="container-fluid text-center">
+            <div class="row">
+                <p class="col-sm-8 col-sm-offset-2">Welcome to Outcom Technologies & Security Systems, your one stop shop for essential technology solutions. We are <strong><em>Outcom</em></strong> without the <strong><em>“e”</em></strong>. This means you have our unwavering assurance of
+                    delivering results without “e”xcuses. Keep exploring to discover ways we put technology to work for you.</p>
+            </div>
         </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div>
-  </div>
-  <!-- /end Carousel 100% Fullscreen -->
 
-  <!-- Home -->
+        <!-- About Us -->
 
-  <div id="attnGrabber" class="container-fluid text-center">
-    <div class="row">
-      <p class="col-sm-8 col-sm-offset-2">Welcome to Outcom Technologies & Security Systems, your one stop shop for essential technology solutions. We are <strong><em>Outcom</em></strong> without the <strong><em>“e”</em></strong>. This means you have our unwavering assurance of delivering results without “e”xcuses. Keep exploring to discover ways we put technology to work for you.</p>
-    </div>
-  </div>
-
-  <!-- About Us -->
-
-  <div id="aboutUs" class="container section-title text-center">
-    <p>VEHICLE & MOBILE ASSETS TRACKING</p>
-  </div>
-
-  <div class="container text-center">
-    <div class="jumbotron">
-      <h2>OUTECH SECURE IS THE TRACKING COMPANY OTHER TRACKING COMPANIES RUN TO.</h2>
-        <p>With over 15 years of exceptional vehicle tracking, there are a few tracking companies that come close to matching our track record. Over the years, we have demonstrated that we are a tracking company our clients and stakeholders can always count on to deliver peace of mind when it comes to asset security and recovery. What do we have going for us? High-caliber Partnerships, Cutting-edge Technology and Superior Processes.</p>
-        <p><a class="btn btn-info btn-fill" href="#" role="button" data-toggle="modal" data-target="#myModal">Read more</a></p> <!-- Trigger modal -->
-    </div>
-  </div>
-
-  <!-- Begin tracking service section -->
-
-  <div class="section-violet">
-
-  <div id="trackingService" class="container section-title text-center">
-    <p>YOU’VE GOT TO DO IT AND YOU’VE GOT TO DO IT RIGHT.</p>
-  </div>
-
-  <div class="container text-center tracking-description">
-    <p>Do not find out the hard way that a less than optimal vehicle tracking is as good as no vehicle tracking. And you know what? No vehicle tracking is extremely risky if not suicidal. Do not risk it, by the time you find out, it may be too late.</p>
-  </div>
-
-  <div class="container text-center">
-    <div class="card card-background">
-        <div class="image">
-            <img src="assets/img/payment2.jpg" alt="Tracking Image"/>
-            <!-- <div class="filter"></div> -->
+        <div id="aboutUs" class="container section-title text-center">
+            <p>VEHICLE & MOBILE ASSETS TRACKING</p>
         </div>
-        <div class="footer">
-                <a href="#ourPrices" class="btn btn-fill btn-primary btn-warning">
+
+        <div class="container text-center">
+            <div class="jumbotron">
+                <h2>OUTECH SECURE IS THE TRACKING COMPANY OTHER TRACKING COMPANIES RUN TO.</h2>
+                <p>With over 15 years of exceptional vehicle tracking, there are a few tracking companies that come close to matching our track record. Over the years, we have demonstrated that we are a tracking company our clients and stakeholders can always
+                    count on to deliver peace of mind when it comes to asset security and recovery. What do we have going for us? High-caliber Partnerships, Cutting-edge Technology and Superior Processes.</p>
+                <p><a class="btn btn-info btn-fill" href="#" role="button" data-toggle="modal" data-target="#myModal">Read more</a></p>
+                <!-- Trigger modal -->
+            </div>
+        </div>
+
+        <!-- Begin tracking service section -->
+
+        <div class="section-violet">
+
+            <div id="trackingService" class="container section-title text-center">
+                <p>YOU’VE GOT TO DO IT AND YOU’VE GOT TO DO IT RIGHT.</p>
+            </div>
+
+            <div class="container text-center tracking-description">
+                <p>Do not find out the hard way that a less than optimal vehicle tracking is as good as no vehicle tracking. And you know what? No vehicle tracking is extremely risky if not suicidal. Do not risk it, by the time you find out, it may be too
+                    late.
+                </p>
+            </div>
+
+            <div class="container text-center">
+                <div class="card card-background">
+                    <div class="image">
+                        <img src="assets/img/payment2.jpg" alt="Tracking Image" />
+                        <!-- <div class="filter"></div> -->
+                    </div>
+                    <div class="footer">
+                        <a href="#ourPrices" class="btn btn-fill btn-primary btn-warning">
                    Take action now
                 </a>
-        </div>
-    </div> <!-- end card -->
-  </div>
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
 
-  <!-- Begin Acordeon -->
+            <!-- Our Key Features -->
 
-  <div class="container text-center tracking-description">
-    <p>Take time to find out some of the very important features of our vehicle tracking services.</p>
-  </div>
-  <div class="container" id="acordeonBottom">
-    <div class="row">
-      <div id="acordeon">
-          <div class="panel-group" id="accordion">
-      <div class="col-md-6">
-      
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseOne" href="#collapseOne" data-toggle="gsdk-collapse">
+            <div class="container text-center tracking-description">
+                <p>Take time to find out some of the very important features of our vehicle tracking services.</p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="fas fa-search-location"></i>
+                            </div>
+                            <div class="description">
+                                <h3> REAL TIME VEHICLE TRACKING </h3>
+                                <p>What good is tracking if it cannot provide you with up to the minute information about your vehicle? At Outech Secure, we understand this that’s why we are always at our best ensuring uninterrupted availability of service.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <div class="description">
+                                <h3> NATIONWIDE COVERAGE </h3>
+                                <p>When it comes to tracking, nobody covers Nigeria like we do. Our top notch infrastructures coupled with buoyant telecommunication backbone give us the most extensive reach.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="description">
+                                <h3> WEB AND MOBILE ACCESS </h3>
+                                <p>We put at your fingertips, the power to be part of the action with our intuitive and user friendly web and mobile apps. Trip History, Vehicle control, Up to the minute reports all available on the go.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="far fa-stop-circle"></i>
+                            </div>
+                            <div class="description">
+                                <h3> REMOTE IMMOBILIZATION </h3>
+                                <p>One other key feature of our services is the ability to remotely shut down vehicles depending on situation. This important feature is also in the control of the client.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="description">
+                                <h3> SPEED MONITOR & REPORTING </h3>
+                                <p>All tracking services come with the ability to monitor vehicle speed and get periodic reports whenever set speed limits are reached. Like is standard with our services, clients also get control to set the speed limit as
+                                    they wish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="myicon">
+                                <i class="far fa-compass"></i>
+                            </div>
+                            <div class="description">
+                                <h3> CONTROL CENTRE ASSISTED RECOVERY </h3>
+                                <p>This feature demonstrates the full power of the outech secure vehicle tracking service. A vibrant workforce, cutting-edge technology equipment and clever procedures all converge to ensure that we always have any situation
+                                    under control.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Our Key Features -->
+
+            <!-- Begin Acordeon -->
+
+            <!-- <div class="container" id="acordeonBottom">
+                <div class="row">
+                    <div id="acordeon">
+                        <div class="panel-group" id="accordion">
+                            <div class="col-md-6">
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseOne" href="#collapseOne" data-toggle="gsdk-collapse">
                     REAL TIME VEHICLE TRACKING
                   </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse">
-                <div class="panel-body">
-                  What good is tracking if it cannot provide you with up to the minute information about your vehicle? At Outech Secure, we understand this that’s why we are always at our best ensuring uninterrupted availability of service.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseTwo" href="#collapseTwo" data-toggle="gsdk-collapse">
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            What good is tracking if it cannot provide you with up to the minute information about your vehicle? At Outech Secure, we understand this that’s why we are always at our best ensuring uninterrupted availability of service.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseTwo" href="#collapseTwo" data-toggle="gsdk-collapse">
                     NATIONWIDE COVERAGE
                   </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                  When it comes to tracking, nobody covers Nigeria like we do. Our top notch infrastructures coupled with buoyant telecommunication backbone give us the most extensive reach.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseThree" href="#collapseThree" data-toggle="gsdk-collapse">
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            When it comes to tracking, nobody covers Nigeria like we do. Our top notch infrastructures coupled with buoyant telecommunication backbone give us the most extensive reach.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseThree" href="#collapseThree" data-toggle="gsdk-collapse">
                     WEB AND MOBILE ACCESS
                   </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                  We put at your fingertips, the power to be part of the action with our intuitive and user friendly web and mobile apps. Trip History, Vehicle control, Up to the minute reports all available on the go.
-                </div>
-              </div>
-            </div>
-          <!-- </div>
-      </div> -->
-    </div>
-    <div class="col-md-6">
-      <!-- <div id="acordeon">
-          <div class="panel-group" id="accordion"> -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseFour" href="#collapseFour" data-toggle="gsdk-collapse">
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            We put at your fingertips, the power to be part of the action with our intuitive and user friendly web and mobile apps. Trip History, Vehicle control, Up to the minute reports all available on the go.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseFour" href="#collapseFour" data-toggle="gsdk-collapse">
                     REMOTE IMMOBILIZATION
                   </a>
-                </h4>
-              </div>
-              <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
-                  One other key feature of our services is the ability to remotely shut down vehicles depending on situation. This important feature is also in the control of the client.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseFive" href="#collapseFive" data-toggle="gsdk-collapse">
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            One other key feature of our services is the ability to remotely shut down vehicles depending on situation. This important feature is also in the control of the client.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseFive" href="#collapseFive" data-toggle="gsdk-collapse">
                     SPEED MONITOR & REPORTING
                   </a>
-                </h4>
-              </div>
-              <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
-                  All tracking services come with the ability to monitor vehicle speed and get periodic reports whenever set speed limits are reached. Like is standard with our services, clients also get control to set the speed limit as they wish.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title text-center">
-                  <a data-target="#collapseSix" href="#collapseSix" data-toggle="gsdk-collapse">
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            All tracking services come with the ability to monitor vehicle speed and get periodic reports whenever set speed limits are reached. Like is standard with our services, clients also get control to set the speed limit as they wish.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title text-center">
+                                            <a data-target="#collapseSix" href="#collapseSix" data-toggle="gsdk-collapse">
                     CONTROL CENTRE ASSISTED RECOVERY
                   </a>
-                </h4>
-              </div>
-              <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
-                  This feature demonstrates the full power of the outech secure vehicle tracking service. A vibrant workforce, cutting-edge technology equipment and clever procedures all converge to ensure that we always have any situation under control.
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            This feature demonstrates the full power of the outech secure vehicle tracking service. A vibrant workforce, cutting-edge technology equipment and clever procedures all converge to ensure that we always have any situation under control.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    </div>
-  </div> <!--  end acordeon -->
+            </div> -->
+            <!--  end acordeon -->
 
-  </div>
-<!-- Pricing -->
-
-    <div class="section section-white" id="plain-price-cards">
-
-      <div class="just-some-extra-margin">
-        <div id="ourPrices" class="container section-title text-center">
-          <p>WHAT TRACKING PACKAGE IS RIGHT FOR ME?</p>
         </div>
-      </div>
-                  
+        <!-- Pricing -->
+
+        <div class="section section-white" id="plain-price-cards">
+
+            <div class="just-some-extra-margin">
+                <div id="ourPrices" class="container section-title text-center">
+                    <p>WHAT TRACKING PACKAGE IS RIGHT FOR ME?</p>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 text-center">
@@ -297,7 +393,7 @@
                             <div class="content">
                                 <h6 class="category text-default">Island Service</h6>
                                 <div class="icon icon-black price-card-icon">
-                                    <i class="fa fa-car"></i>
+                                    <i class="fas fa-car"></i>
                                 </div>
                                 <ul class="price list-unstyled">
                                     <li>
@@ -311,16 +407,16 @@
                                 <h4 class="card-price-features btn btn-default btn-simple" data-toggle="modal" data-target="#priceModalOne">What Is Included?</h4>
                             </div>
                             <div class="footer">
-                               <button type="button" class="btn btn-default btn-round btn-block">Get this Service</button>
+                                <button type="button" class="btn btn-default btn-round btn-block btn-fill">Get this Service</button>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                      <div class="col-sm-6 col-md-3 text-center">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <div class="card card-price card-plain">
                             <div class="content">
                                 <h6 class="category text-default">Locator Service</h6>
                                 <div class="icon icon-azure price-card-icon">
-                                    <i class="fa fa-car"></i>
+                                    <i class="fas fa-car"></i>
                                 </div>
                                 <ul class="price list-unstyled">
                                     <li>
@@ -334,16 +430,16 @@
                                 <h4 class="card-price-features btn btn-default btn-simple" data-toggle="modal" data-target="#priceModalTwo">What Is Included?</h4>
                             </div>
                             <div class="footer">
-                               <button type="button" class="btn btn-info btn-round btn-block">Get this Service</button>
+                                <button type="button" class="btn btn-info btn-round btn-block btn-fill">Get this Service</button>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-sm-6 col-md-3 text-center">
                         <div class="card card-price card-plain">
                             <div class="content">
                                 <h6 class="category text-default">Locator Plus Service</h6>
                                 <div class="icon icon-green price-card-icon">
-                                    <i class="fa fa-car"></i>
+                                    <i class="fas fa-car"></i>
                                 </div>
                                 <ul class="price list-unstyled">
                                     <li>
@@ -357,16 +453,16 @@
                                 <h4 class="card-price-features btn btn-default btn-simple" data-toggle="modal" data-target="#priceModalThree">What Is Included?</h4>
                             </div>
                             <div class="footer">
-                               <button type="button" class="btn btn-success btn-round btn-block btn-fill">Get this Service</button>
+                                <button type="button" class="btn btn-success btn-round btn-block btn-fill">Get this Service</button>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-sm-6 col-md-3 text-center">
                         <div class="card card-price card-plain">
                             <div class="content">
                                 <h6 class="category text-default">Fleet Service</h6>
                                 <div class="icon icon-purple price-card-icon">
-                                    <i class="fa fa-car"></i>
+                                    <i class="fas fa-car"></i>
                                 </div>
                                 <ul class="price list-unstyled">
                                     <li>
@@ -376,204 +472,280 @@
                                         <b>Elite</b> N79,950
                                     </li>
                                 </ul>
-                                <p class="description text-center">Perfect for clients who would like to enjoy the complete suite of all the features within the Outech Secure tracking repertoire. All of our great features are both managed for the client and also available for them to manage themselves.</p>
-                                  <h4 class="card-price-features btn btn-default btn-simple" data-toggle="modal" data-target="#priceModalFour">What Is Included?</h4>                             
+                                <p class="description text-center">Perfect for clients who would like to enjoy the complete suite of all the features within the Outech Secure tracking repertoire. All of our great features are both managed for the client and also available for them to manage
+                                    themselves.
+                                </p>
+                                <h4 class="card-price-features btn btn-default btn-simple" data-toggle="modal" data-target="#priceModalFour">What Is Included?</h4>
                             </div>
                             <div class="footer">
-                               <button type="button" class="btn btn-fleet btn-round btn-block">Get this Service</button>
+                                <button type="button" class="btn btn-fleet btn-fill btn-round btn-block">Get this Service</button>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                </div> <!-- end row -->
+                </div>
+                <!-- end row -->
             </div>
         </div>
-      </div> <!-- End pricing -->
+    </div>
+    <!-- End pricing -->
 
-        <!-- Services -->
+    <!-- Services -->
 
-  <div id="ourServices" class="container section-title text-center">
-    <p>OUTCOM TECHNOLOGIES IS SO MUCH MORE</p>
-  </div>
+    <div id="ourServices" class="container section-title text-center">
+        <p>OUTCOM TECHNOLOGIES IS SO MUCH MORE</p>
+    </div>
 
-  <!-- Begin Card -->
-  <div class="container container-color">
-    <div class="row">
+    <!-- Begin Card -->
+    <div class="container container-color">
+        <div class="row row-eq-height">
 
-      <!-- Begin card one -->
-      <div class="col-md-4">
-      <div class="card">
-            <div class="image">
-                <img src="assets/img/ict.jpg" alt="ICT Image"/>
+            <!-- Begin card one -->
+            <div class="col-md-4">
+                <div class="card card-height-equal2">
+                    <div class="image">
+                        <img src="assets/img/ict.jpg" alt="ICT Image" />
+                    </div>
+                    <div class="content text-center">
+                        <h4 class="title">ICT CONSULTANCY, SERVICES AND TRAINING</h4>
+                        <p class="description">Outcom Technologies being a full-fledged technology company offers the best in class ICT solutions. We provide consultancy services tailored to power and drive businesses, taking them from where they currently are to where they
+                            desire to be.</p>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <h4 class="title">ICT CONSULTANCY, SERVICES AND TRAINING</h4>
-                <p class="description">Outcom Technologies being a full-fledged technology company offers the best in class ICT solutions. We provide consultancy services tailored to power and drive businesses, taking them from where they currently are to where they desire to be.</p>
-            </div>
-          </div>
-        </div> <!-- End card one -->
+            <!-- End card one -->
 
-        <!-- Begin card two -->
-        <div class="col-md-4">
-        <div class="card">
-            <div class="image">
-                <img src="assets/img/software1.jpg" alt="ICT Image"/>
+            <!-- Begin card two -->
+            <div class="col-md-4">
+                <div class="card card-height-equal2">
+                    <div class="image">
+                        <img src="assets/img/software1.jpg" alt="ICT Image" />
+                    </div>
+                    <div class="content text-center">
+                        <h4 class="title">SOFTWARE DEVELOPMENT</h4>
+                        <p class="description">One of the important ways we enable businesses reach their potentials is through our portfolio of apps and software engineered to optimize business processes. Our very competent team of developers in collaborations with renowned
+                            technology companies are always prepared to deliver the superlative solutions for a wide range of industries.</p>
+                    </div>
+                </div>
             </div>
-            <div class="content">
-                <h4 class="title">SOFTWARE DEVELOPMENT</h4>
-                <p class="description">One of the important ways we enable businesses reach their potentials is through our portfolio of apps and software engineered to optimize business processes. Our very competent team of developers in collaborations with renowned technology companies are always prepared to deliver the superlative solutions for a wide range of industries.</p>
+            <!-- End card two -->
+
+            <!-- Begin card three -->
+            <div class="col-md-4">
+                <div class="card card-height-equal2">
+                    <div class="image">
+                        <img src="assets/img/payment2.jpg" alt="ICT Image" />
+                    </div>
+                    <div class="content text-center">
+                        <h4 class="title">E-PAYMENT SOLUTIONS</h4>
+                        <p class="description">Businesses in a bid to provide their customers with more convenient payment options are turning to E-payment. As a technology company with the primary aim of helping businesses succeed, we offer the most advanced and secure E-payment
+                            solutions to ensure both our clients and their customers are adequately protected.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div> <!-- End card two -->
-        
-        <!-- Begin card three -->
-        <div class="col-md-4">
-        <div class="card">
-            <div class="image">
-                <img src="assets/img/payment2.jpg" alt="ICT Image"/>
-            </div>
-            <div class="content">
-                <h4 class="title">E-PAYMENT SOLUTIONS</h4>
-                <p class="description">Businesses in a bid to provide their customers with more convenient payment options are turning to E-payment. As a technology company with the primary aim of helping businesses succeed, we offer the most advanced and secure E-payment solutions to ensure both our clients and their customers are adequately protected.</p>
-            </div>
-          </div>
-        </div> <!-- End card three -->
-      </div>
-    </div> <!-- End Card -->
+            <!-- End card three -->
+        </div>
+    </div>
+    <!-- End Card -->
 
     <!-- Contact Us -->
 
-      <div id="getInTouch">
+    <div id="getInTouch">
         <div class="container">
-          <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <div class="info">
-                    <div class="icon icon-black">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="description">
-                      <h3> We Are Eager To Hear From You </h3>
-                      <p>Be it Product Inquiry, Order Placement or Request for Support, our team of professional customer service agents are always on standby to serve you, promptly.</p>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="info">
+                        <div class="icon icon-black">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="description">
+                            <div class="section-title">
+                                <p> We Are Eager To Hear From You </p>
+                            </div>
+                            <p>Be it Product Inquiry, Order Placement or Request for Support, our team of professional customer service agents are always on standby to serve you, promptly.</p>
+                        </div>
                     </div>
                 </div>
-              </div>
-                        
-      <!-- Contact Form -->
 
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <form>
-                <div class="form-group">
-                  <label for="ourContactForm">Name</label>
-                  <input type="name" class="form-control" id="ourContactForm" placeholder="Name">
+                <!-- Contact Form -->
+
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <form>
+                        <div class="form-group">
+                            <label for="ourContactForm">Name</label>
+                            <input type="name" class="form-control" id="ourContactForm" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="ourContactForm">Email</label>
+                            <input type="email" class="form-control" id="ourContactForm" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="ourContactForm">How May We Help You?</label>
+                            <textarea class="form-control" placeholder="How may we help you?" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-primary btn-fill">Submit</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                  <label for="ourContactForm">Email</label>
-                  <input type="email" class="form-control" id="ourContactForm" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="ourContactForm">How May We Help You?</label>
-                  <textarea class="form-control" placeholder="How may we help you?" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn btn-info btn-primary btn-fill">Submit</button>
-              </form>
             </div>
-          </div>
-        </div> <!-- end container -->
-      </div>
-      
-      <!-- end contact us -->
+        </div>
+        <!-- end container -->
+    </div>
 
-  <!-- Beging footer -->
+    <!-- end contact us -->
 
-  <footer class="footer footer-transparent footer-black">
+    <!-- Beging footer -->
 
-            <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+    <div class="separator"></div>
 
-            <div class="container">
-                <!-- <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
+    <footer class="footer footer-big footer-transparent" style="background-image: url('assets/img/software5.jpg')">
+
+        <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <h5 class="title">Our Products & Services</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#trackingService">
+                                  Vehicle and Mobile Assets Tracking
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ourServices">
+                                  ICT Consultancy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ourServices">
+                                  Software Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ourServices">
+                                  E-Payment Solutions
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="title">Site Navigation</h5>
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
                                 Home
                             </a>
-                        </li>
-                        <li>
-                            <a href="#aboutUs">
+                            </li>
+                            <li>
+                                <a href="#aboutUs">
                                 About Us
                             </a>
-                        </li>
-                        <li>
-                            <a href="#ourServices">
+                            </li>
+                            <li>
+                                <a href="#ourServices">
                                 Services
                             </a>
-                        </li>
-                        <li>
-                            <a href="#trackingService">
+                            </li>
+                            <li>
+                                <a href="#trackingService">
                                Tracking
                             </a>
-                        </li>
-                        <li>
-                            <a href="#ourPrices">
+                            </li>
+                            <li>
+                                <a href="#ourPrices">
                                Pricing
                             </a>
-                        </li>
-                        <li>
-                            <a href="#getInTouch">
+                            </li>
+                            <li>
+                                <a href="#getInTouch">
                                Contact Us
                             </a>
-                        </li>
-                    </ul>
-                </nav> -->
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-5">
+                    <h5 class="title">CONTACT US</h5>
+                    <nav class="numbers">
+                        <ul>
+                            <li>
+                                <h4>13.723 <small>accounts</small></h4>
+                            </li>
+                            <li>
+                                <h4>55.234 <small>downloads</small></h4>
+                            </li>
+                            <li>
+                                <h4>99.092 <small>shares</small></h4>
+                            </li>
 
-                    <div class="social-area pull-right">
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
-                <div class="copyright">
-                    &copy; 2019 OUTCOM Technologies And Security Systems Limited
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </footer> <!-- End Footer -->
+            <hr />
+            <div class="social-area text-center">
+                <h5>follow us on</h5>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2019 OUTCOM Technologies And Security Systems Limited
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- End Footer -->
 
 
-</div> <!-- end wrapper div -->
+    </div>
+    <!-- end wrapper div -->
 
-<!-- Main Modal -->
+    <!-- Main Modal -->
 
-  <!-- Modal Core -->
+    <!-- Modal Core -->
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">LEARN MORE ABOUT US...</h3>
-          </div>
-          <div class="modal-body">
-            <p class="modal-body">
-              Outech secure enjoy long standing partnerships with some of the world’s biggest tracking device manufacturers and these partnerships have seen us pioneering innovational device features and tracking practices. Because we have proven our proficiency over the years, we have become an important port of call for crucial development consultations. For some of them our impressive showing has earned us the trust to become the sole representatives of their brands here in Nigeria. Locally, we are among the first tracking companies to get tracking license from the Nigerian Communications Commission (NCC) and today we are a sort of reference standard for upcoming tracking companies. Our high-priority partnerships with the Nigerian Police Force and other Nigerian security agencies means that we are always exposed to the most formidable security network and the largest array of measures.
-            </p>
-            <p class="modal-body">
-              Vehicle tracking is a technology-based service and because we and our partners understand that technology is extremely dynamic, we are constantly innovating our products and processes to enable us deliver state-of -the-art tracking solutions. Owing to this we have seen ourselves progress from the times of purely SMS tracking to today’s real time GPRS server tracking and we are not slowing down. We deploy unconventional combination of technology to ensure our clients get nothing less than the best services.
-            </p>
-            <p class="modal-body">
-              The Outech secure Control Centre is the component that ties all of the above neatly together. A vibrant workforce, state-of-the-art equipment and clever procedures all converge to ensure that we always have any situation under control.  Because we understand that  things can go wrong (or sometimes, out of control) in a split second, our processes and efforts are always proactive and precautionary in nature enabling us to always stay steps ahead of the bad guys.
-            </p>
-            <p class="modal-body">
-              Come on board the outech secure platform today let’s make technology, experience and unrivalled dedication work for you.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel">LEARN MORE ABOUT US...</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body">
+                        Outech secure enjoy long standing partnerships with some of the world’s biggest tracking device manufacturers and these partnerships have seen us pioneering innovational device features and tracking practices. Because we have proven our proficiency over
+                        the years, we have become an important port of call for crucial development consultations. For some of them our impressive showing has earned us the trust to become the sole representatives of their brands here in Nigeria. Locally,
+                        we are among the first tracking companies to get tracking license from the Nigerian Communications Commission (NCC) and today we are a sort of reference standard for upcoming tracking companies. Our high-priority partnerships with
+                        the Nigerian Police Force and other Nigerian security agencies means that we are always exposed to the most formidable security network and the largest array of measures.
+                    </p>
+                    <p class="modal-body">
+                        Vehicle tracking is a technology-based service and because we and our partners understand that technology is extremely dynamic, we are constantly innovating our products and processes to enable us deliver state-of -the-art tracking solutions. Owing to
+                        this we have seen ourselves progress from the times of purely SMS tracking to today’s real time GPRS server tracking and we are not slowing down. We deploy unconventional combination of technology to ensure our clients get nothing
+                        less than the best services.
+                    </p>
+                    <p class="modal-body">
+                        The Outech secure Control Centre is the component that ties all of the above neatly together. A vibrant workforce, state-of-the-art equipment and clever procedures all converge to ensure that we always have any situation under control. Because we understand
+                        that things can go wrong (or sometimes, out of control) in a split second, our processes and efforts are always proactive and precautionary in nature enabling us to always stay steps ahead of the bad guys.
+                    </p>
+                    <p class="modal-body">
+                        Come on board the outech secure platform today let’s make technology, experience and unrivalled dedication work for you.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- end Modal -->
 
@@ -582,35 +754,35 @@
     <!-- Modal Core -->
 
     <div class="modal fade" id="priceModalOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Island Service</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li> Nationwide Coverage</li>
-              <li> Real Time Speed Recording</li>
-              <li> Full Installation</li>
-              <li> Location Reporting</li>
-              <li> Remote Immobilization</li>
-              <li> Backup Battery</li>
-              <li> Power Monitor</li>
-              <li> Covert Voice Monitor</li>
-              <li> Speed Limit Monitor</li>
-              <li> Trip Monitor</li>
-              <li> Programmable Geo-Fencing Report</li>
-              <li> Fuel Monitoring</li>
-              <li> Control Centre Assistance for Recovery</li>
-              <li> Additional Features</li>
-            </ul>      
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Island Service</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li> Nationwide Coverage</li>
+                        <li> Real Time Speed Recording</li>
+                        <li> Full Installation</li>
+                        <li> Location Reporting</li>
+                        <li> Remote Immobilization</li>
+                        <li> Backup Battery</li>
+                        <li> Power Monitor</li>
+                        <li> Covert Voice Monitor</li>
+                        <li> Speed Limit Monitor</li>
+                        <li> Trip Monitor</li>
+                        <li> Programmable Geo-Fencing Report</li>
+                        <li> Fuel Monitoring</li>
+                        <li> Control Centre Assistance for Recovery</li>
+                        <li> Additional Features</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Price Modal2 -->
@@ -618,27 +790,27 @@
     <!-- Modal Core -->
 
     <div class="modal fade" id="priceModalTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Locator Service</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li> Nationwide Coverage</li>
-              <li> Full Installation</li>
-              <li> 24hrs Real time Vehicle location update</li>
-              <li> Remote Immobilization</li>
-              <li> Backup Battery *Power Monitor</li>
-              <li> Control Centre Assistance for Recovery</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Locator Service</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li> Nationwide Coverage</li>
+                        <li> Full Installation</li>
+                        <li> 24hrs Real time Vehicle location update</li>
+                        <li> Remote Immobilization</li>
+                        <li> Backup Battery *Power Monitor</li>
+                        <li> Control Centre Assistance for Recovery</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Price Modal3 -->
@@ -646,35 +818,35 @@
     <!-- Modal Core -->
 
     <div class="modal fade" id="priceModalThree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Locator Plus Service</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li> Nationwide Coverage</li>
-              <li> Real Time Speed Recording</li>
-              <li> Full Installation</li>
-              <li> History/Playback</li>
-              <li> Web Access</li>
-              <li> Location Reporting</li>
-              <li> Remote Immobilization</li>
-              <li> Backup Battery</li>
-              <li> Power Monitor</li>
-              <li> Covert Voice Monitor</li>
-              <li> Speed Limit Monitor</li>
-              <li> Trip Monitor</li>
-              <li> Programmable Geo-Fencing Report</li>
-              <li> Control Centre Assistance for Recovery</li>
-            </ul>   
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Locator Plus Service</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li> Nationwide Coverage</li>
+                        <li> Real Time Speed Recording</li>
+                        <li> Full Installation</li>
+                        <li> History/Playback</li>
+                        <li> Web Access</li>
+                        <li> Location Reporting</li>
+                        <li> Remote Immobilization</li>
+                        <li> Backup Battery</li>
+                        <li> Power Monitor</li>
+                        <li> Covert Voice Monitor</li>
+                        <li> Speed Limit Monitor</li>
+                        <li> Trip Monitor</li>
+                        <li> Programmable Geo-Fencing Report</li>
+                        <li> Control Centre Assistance for Recovery</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Price Modal4 -->
@@ -682,38 +854,38 @@
     <!-- Modal Core -->
 
     <div class="modal fade" id="priceModalFour" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Fleet Service</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li> Nationwide Coverage</li>
-              <li> Real Time Speed Recording</li>
-              <li> Full Installation</li>
-              <li> History/Playback</li>
-              <li> Web Access</li>
-              <li> Location Reporting</li>
-              <li> Remote Immobilization</li>
-              <li> Backup Battery</li>
-              <li> Power Monitor</li>
-              <li> Covert Voice Monitor</li>
-              <li> Speed Limit Monitor</li>
-              <li> Trip Monitor</li>
-              <li> Fuel Monitor</li>
-              <li> Programmable Geo-Fencing Report</li>
-              <li> Special System Admin Access</li>
-              <li> Group Account</li>
-              <li> Control Centre Assistance for Recovery</li>
-            </ul>       
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Fleet Service</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li> Nationwide Coverage</li>
+                        <li> Real Time Speed Recording</li>
+                        <li> Full Installation</li>
+                        <li> History/Playback</li>
+                        <li> Web Access</li>
+                        <li> Location Reporting</li>
+                        <li> Remote Immobilization</li>
+                        <li> Backup Battery</li>
+                        <li> Power Monitor</li>
+                        <li> Covert Voice Monitor</li>
+                        <li> Speed Limit Monitor</li>
+                        <li> Trip Monitor</li>
+                        <li> Fuel Monitor</li>
+                        <li> Programmable Geo-Fencing Report</li>
+                        <li> Special System Admin Access</li>
+                        <li> Group Account</li>
+                        <li> Control Centre Assistance for Recovery</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
@@ -722,33 +894,33 @@
 
     <!--  jQuery and Bootstrap core files    -->
     <script src="assets/js/jquery.js" type="text/javascript"></script>
-	<script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
 
-	<script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
 
-	<!--  Plugins -->
-	<script src="assets/js/gsdk-checkbox.js"></script>
-	<script src="assets/js/gsdk-morphing.js"></script>
-	<script src="assets/js/gsdk-radio.js"></script>
-	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
-	<script src="assets/js/bootstrap-select.js"></script>
-	<script src="assets/js/bootstrap-datepicker.js"></script>
-	<script src="assets/js/chartist.min.js"></script>
+    <!--  Plugins -->
+    <script src="assets/js/gsdk-checkbox.js"></script>
+    <script src="assets/js/gsdk-morphing.js"></script>
+    <script src="assets/js/gsdk-radio.js"></script>
+    <script src="assets/js/gsdk-bootstrapswitch.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/chartist.min.js"></script>
     <script src="assets/js/jquery.tagsinput.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
     <!--  Get Shit Done Kit PRO Core javascript 	 -->
-	<script src="assets/js/get-shit-done.js"></script>
+    <script src="assets/js/get-shit-done.js"></script>
 
     <!--  Get Shit Done Kit PRO methods used for demo purpose      -->
     <script src="assets/js/demo.js"></script>
-    	
+
     <!-- <script type="text/javascript">
         $().ready(function(){
             $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
         });       
     </script> -->
-    
+
     <!-- If you are using TypeKit.com uncomment this code otherwise you can delete it -->
     <!--
     <script src="https://use.typekit.net/[your kit code here].js"></script>
@@ -756,9 +928,13 @@
     -->
 
     <!-- If you have retina @2x images on your server which can be sent to iPhone/iPad/MacRetina, please uncomment the next line, otherwise you can delete it -->
-	<!-- <script src="assets/js/retina.min.js"></script> -->
+    <!-- <script src="assets/js/retina.min.js"></script> -->
+
+    <!-- <script type="text/javascript">
+    $(function() {
+    $('.box').matchHeight();
+    });
+  </script> -->
 
 
 </html>
-
-
