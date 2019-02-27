@@ -212,8 +212,8 @@ body {
     padding: 0;
     display: inline-table;
     /* color: #45c0fd; */
-    color: white;
-    text-shadow: 1px 2px 0 #476b6b;
+    color: #b30086;
+    text-shadow: 1px 2px 0 white;
 }
 
 @media (min-width: 768px) {
