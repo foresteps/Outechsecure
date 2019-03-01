@@ -255,7 +255,7 @@
                                 <i class="fas fa-search-location"></i>
                             </div>
                             <div class="description">
-                                <h3> REAL TIME VEHICLE TRACKING </h3>
+                                <h3> REAL TIME<br> VEHICLE TRACKING </h3>
                                 <p>What good is tracking if it cannot provide you with up to the minute information about your vehicle? At Outech Secure, we understand this that’s why we are always at our best ensuring uninterrupted availability of service.</p>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                                 <i class="fas fa-globe-africa"></i>
                             </div>
                             <div class="description">
-                                <h3> NATIONWIDE COVERAGE </h3>
+                                <h3> NATIONWIDE<br> COVERAGE </h3>
                                 <p>When it comes to tracking, nobody covers Nigeria like we do. Our top notch infrastructures coupled with buoyant telecommunication backbone give us the most extensive reach.</p>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
                                 <i class="fas fa-mobile-alt"></i>
                             </div>
                             <div class="description">
-                                <h3> WEB AND MOBILE ACCESS </h3>
+                                <h3> WEB AND<br> MOBILE ACCESS </h3>
                                 <p>We put at your fingertips, the power to be part of the action with our intuitive and user friendly web and mobile apps. Trip History, Vehicle control, Up to the minute reports all available on the go.</p>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                                 <i class="far fa-stop-circle"></i>
                             </div>
                             <div class="description">
-                                <h3> REMOTE IMMOBILIZATION </h3>
+                                <h3> REMOTE<br> IMMOBILIZATION </h3>
                                 <p>One other key feature of our services is the ability to remotely shut down vehicles depending on situation. This important feature is also in the control of the client.</p>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
                                 <i class="fas fa-file-alt"></i>
                             </div>
                             <div class="description">
-                                <h3> SPEED MONITOR & REPORTING </h3>
+                                <h3> SPEED MONITOR<br> & REPORTING </h3>
                                 <p>All tracking services come with the ability to monitor vehicle speed and get periodic reports whenever set speed limits are reached. Like is standard with our services, clients also get control to set the speed limit as
                                     they wish.
                                 </p>
@@ -320,7 +320,7 @@
                                 <i class="far fa-compass"></i>
                             </div>
                             <div class="description">
-                                <h3> CONTROL CENTRE ASSISTED RECOVERY </h3>
+                                <h3> CONTROL CENTRE<br> ASSISTED RECOVERY </h3>
                                 <p>This feature demonstrates the full power of the outech secure vehicle tracking service. A vibrant workforce, cutting-edge technology equipment and clever procedures all converge to ensure that we always have any situation
                                     under control.
                                 </p>
@@ -628,27 +628,41 @@
                 <div class="container">
                     <div class="row contactus-center">
                         <div class="col-md-6 col-md-offset-1">
-                            <form role="form" id="contact-form" method="post">
-                                <div class="form-group">
-                                    <label for="name">Your name</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="First Name and Last Name" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your personal email address" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone number" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">How May We Help You?</label>
-                                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
-                                </div>
-                                <div class="submit">
-                                    <input type="submit" class="btn btn-info btn-fill" value="Contact Us" />
+
+                            <form role="form" id="contact-form" method="POST" action="contact.php">
+
+                                <div class="messages"></div>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        <label for="name">Your Name *</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="First Name and Last Name *" required="required" data-error="Name is required." />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Your personal email address *" required="required" data-error="Valid email is required." />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Please enter your phone number" />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">How May We Help You? *</label>
+                                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="How may we help you? *" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="required-field">
+                                        <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" class="btn btn-info btn-fill" value="Contact Us" />
+                                    </div>
                                 </div>
                             </form>
+
                         </div>
                         <div class="col-md-3 col-md-offset-1">
                             <div class="contact-info">
@@ -984,6 +998,8 @@
     <script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
 
     <script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="assets/js/contact.js"></script>
 
     <!--  Plugins -->
     <!-- <script src="assets/js/gsdk-checkbox.js"></script>
