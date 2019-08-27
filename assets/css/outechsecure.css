@@ -18,6 +18,11 @@ body {
     padding: 0;
 }
 
+.navbar-image {
+    height: auto;
+    padding: 15px 40px;
+}
+
 .carousel,
 .item,
 .active {
@@ -33,6 +38,9 @@ body {
 }
 
 .carousel-caption {
+    position: absolute;
+    bottom: 200px;
+    align-content: center;
     z-index: 10;
 }
 
@@ -66,6 +74,79 @@ body {
     background-position: center bottom;
 }
 
+.login-bar {
+    height: 30px;
+    background-color: #f8f5ef;
+    position: relative;
+}
+
+.login-par {
+    color: rgb(107, 12, 96);
+    margin: 0;
+    font-size: inherit;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-bar-xs {
+    display: none;
+    height: 30px;
+    background-color: #f8f5ef;
+    position: relative;
+}
+
+.login-par-xs {
+    display: none;
+    color: rgb(107, 12, 96);
+    margin: 0;
+    font-size: inherit;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-login-bar {
+    border-width: 2px;
+    background-color: transparent;
+    font-weight: 400;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 8px 16px;
+    border-color: rgb(221, 221, 215);
+    color: rgb(221, 221, 215);
+}
+
+.btn-outline-secondary {
+    color: rgb(107, 12, 96);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(107, 12, 96);
+}
+
+.btn-outline-secondary:hover {
+    color: rgb(221, 221, 215);
+    background-color: rgb(107, 12, 96);
+    border-color: rgb(107, 12, 96);
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.btn-xs {
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 8px 16px;
+    height: 30px;
+}
+
 .modal-header {
     padding-left: 30px;
     margin-bottom: 0;
@@ -96,6 +177,29 @@ body {
     text-transform: uppercase;
     padding: 0 50px 0 50px;
     line-height: 1.2;
+}
+
+.space-50 {
+    height: 200px;
+    background-color: #0f0d0d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-title-newsletter p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #e7e6e6;
+    /* margin-top: 0; */
+    /* margin-bottom: 15px; */
+    text-transform: uppercase;
+    padding: 50px 50px 0 50px;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: auto
 }
 
 .jumbotron {
@@ -241,63 +345,50 @@ body {
 }
 
 .help-block.with-errors {
-    color: #ff5050;
+    color: #8d8b8b;
     margin-top: 5px;
 }
 
+.subscribe-line .form-control {
+    height: auto;
+    font-size: 24px;
+    border: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 54px;
+    background-color: transparent;
+}
 
-/*Media query controlling jumbotron, attention grabber, and section titles on smaller screens*/
+.subscribe-line-transparent .form-control {
+    color: #d39e0c;
+}
 
-@media (min-width: 320px) and (max-width: 767px) {
-    body {
-        padding-top: 75px;
-    }
-    .jumbotron {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 30px;
-        padding-left: 30px;
-        margin-bottom: 30px;
-    }
-    .jumbotron h2,
-    .h2 {
-        font-size: 26px;
-    }
-    .jumbotron p {
-        font-size: 16px;
-    }
-    .section-title p {
-        font-size: 30px;
-        font-weight: 100;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        padding: 0 30px 0 30px;
-        line-height: 1.2;
-    }
-    .btn-lg,
-    .btn-group-lg>.btn {
-        padding: 5px 10px;
-        font-size: 12px;
-        line-height: 1.5;
-        border-radius: 3px;
-    }
-    #attnGrabber p {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        padding: 0 30px 0 30px;
-    }
-    #attnGrabber {
-        background-color: #afa69d;
-        color: white;
-        padding: 30px;
-        margin-bottom: 50px;
-    }
-    .quote-mark {
-        font-size: 2em;
-    }
+.subscribe-line-transparent-background {
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.subscribe-line-transparent-background .container {
+    z-index: 2;
+    position: relative;
+}
+
+.subscribe-line-transparent-background::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.8);
+    display: block;
+    content: "";
+    z-index: 1;
+}
+
+.newsletter {
+    padding-top: 35px;
+    background-color: #FFFFFF;
 }
 
 .panel-group .panel {
@@ -334,6 +425,150 @@ body {
     color: #9A9A9A;
 }
 
+.form-control::-moz-placeholder {
+    color: #d39e0c;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.form-control:-moz-placeholder {
+    color: #d39e0c;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #d39e0c;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.form-control:-ms-input-placeholder {
+    color: #d39e0c;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.has-success .form-control {
+    border-color: #4CB4C3;
+}
+
+.has-success .form-control:focus {
+    border-color: #4CB4C3;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+/*Media query controlling jumbotron, attention grabber, and section titles on smaller screens*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* body {
+        padding-top: 75px;
+    } */
+    .jumbotron {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+    .jumbotron h2,
+    .h2 {
+        font-size: 26px;
+    }
+    .jumbotron p {
+        font-size: 16px;
+    }
+    .section-title p {
+        font-size: 30px;
+        font-weight: 100;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        padding: 0 30px 0 30px;
+        line-height: 1.2;
+    }
+    .btn-lg,
+    .btn-group-lg>.btn {
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+    #attnGrabber p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        padding: 0 30px 0 30px;
+    }
+    #attnGrabber {
+        background-color: #afa69d;
+        color: white;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    .quote-mark {
+        font-size: 2em;
+    }
+    .section-title-newsletter p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .subscribe-line .form-control {
+        text-align: center;
+    }
+    .login-bar {
+        display: none;
+        height: 30px;
+        background-color: #f8f5ef;
+        position: relative;
+    }
+    .login-par {
+        display: none;
+        color: rgb(107, 12, 96);
+        margin: 0;
+        font-size: inherit;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .login-bar-xs {
+        display: block;
+        height: 30px;
+        background-color: #f8f5ef;
+        position: relative;
+    }
+    .login-par-xs {
+        display: block;
+        color: rgb(107, 12, 96);
+        margin: 0;
+        font-size: inherit;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-title-newsletter p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .subscribe-line .form-control {
+        text-align: center;
+    }
+}
+
 @media (min-width: 768px) {
     .card-price .content {
         min-height: 417px;
@@ -345,7 +580,7 @@ body {
         min-height: 550px;
     }
     .card-price .content {
-        min-height: 470px;
+        min-height: 472px;
     }
 }
 
@@ -354,7 +589,7 @@ body {
         min-height: 500px;
     }
     .card-price .content {
-        min-height: 428px;
+        min-height: 430px;
     }
 }
 

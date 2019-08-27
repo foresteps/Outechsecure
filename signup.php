@@ -4,20 +4,20 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'New Customer Request <info@outechsecure.com>';
+$from = 'Newsletter Subscriber <info@outechsecure.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'New Customer Request <info@outechsecure.com>';
+$sendTo = 'New Subscription <info@outechsecure.com>';
 
 // subject of the email
-$subject = 'A Customer Just Made A Request';
+$subject = 'You Have A Newsletter Subscriber';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Customer Name', 'email' => 'Customer Email', 'phone' => 'Customer Phone Number', 'message' => 'Enquiry'); 
+$fields = array('email' => 'Subscriber Email'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Your request has been successfully submitted. We will get back to you soon. Thank you for choosing OutechSecure.';
+$okMessage = 'Thank you for subscribing to our newsletter.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your website contact form\n=============================\n";
+    $emailText = "A new subscriber just signed up to your newsletter\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 

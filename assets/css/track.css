@@ -1,0 +1,54 @@
+body {
+    font-family: "Helvetica Neue", "Open Sans", Arial, sans-serif;
+    background-color: #FAFAFA;
+}
+
+.content {
+    text-align: center !important;
+}
+
+.logo-img-top {
+    max-width: 80%;
+    min-width: 70%;
+}
+
+.logo-control {
+    padding-top: 8%;
+}
+
+hr {
+    max-width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-grey {
+    color: grey;
+}
+
+.payoff-text-color {
+    color: #52658C;
+}
+
+.services-text {
+    font-size: 0.8rem;
+}
+
+.bg-white {
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    margin-top: 1.5rem;
+}
+
+.large-space {
+    height: 50px;
+}
+
+@media (max-width: 767px) {
+    .large-space {
+        height: 150px;
+    }
+}

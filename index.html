@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 727763338 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-727763338"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-727763338');
+    </script>
+
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
@@ -26,11 +40,47 @@
     <!-- Optional - Adds useful class to manipulate icon font display -->
     <link rel="stylesheet" href="assets/css/pe-icon-7-stroke/css/helper.css">
 
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/8862c1db967ef3b98ce151be9/20a5c16fbdad8129e288e7118.js");
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '362074838051316');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=362074838051316&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,8 +90,12 @@
                     <span class="icon-bar bar2"></span>
                     <span class="icon-bar bar3"></span>
                 </button>
-                <a class="navbar-brand" href="#">OUTECHSECURE</a>
+                <a class="navbar-left" href="#">
+                    <img class="navbar-image img-fluid" alt="Outechsecure Logo" src="assets/img/Outech-Logo.png">
+                </a>
+                <!-- <a class="navbar-brand" href="#">OUTECHSECURE</a> -->
             </div>
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
@@ -76,11 +130,19 @@
                 </a>
                     </li>
                 </ul>
+                <!-- <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button> -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <div class="login-bar text-center">
+        <span class="login-par">EXISTING CUSTOMERS GO TO...<a class="btn-login-bar btn-outline-secondary btn-xs" href="track.html"><i class="fas fa-search-location"></i> Track</a></span>
+    </div>
+    <div class="login-bar-xs text-center">
+        <span class="login-par-xs"><a class="btn-login-bar btn-outline-secondary btn-xs" href="track.html"><i class="fas fa-search-location"></i> Track</a></span>
+    </div>
 
     <!-- Carousel 100% Fullscreen -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -546,6 +608,49 @@
     </div>
     <!-- End pricing -->
 
+    <!-- Newsletter Signup -->
+
+    <div class="newsletter">
+        <div class="container section-title text-center">
+            <p>STAY SAFE.</p>
+        </div>
+    </div>
+
+    <div class="space-50 subscribe-line subscribe-line-transparent-background" style="background-image: url('assets/img/software5.jpg')">
+        <div class="text-center section-title-newsletter">
+            <p>A little tip might be what saves you next. </br> Subscribe to get our life-saving security tips delivered straight to your inbox</p>
+        </div>
+    </div>
+    <div class="subscribe-line subscribe-line-transparent" style="background-image: url('assets/img/software5.jpg'); margin-bottom: 35px">
+        <div class="container">
+
+            <form role="form" id="signup-form" method="POST" action="signup.php">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email here..." required="required" data-error="You have to enter your email before you click SUBSCRIBE." />
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="submit">
+                                <input type="submit" class="btn btn-warning btn-fill btn-block" value="Subscribe Now!" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Newsletter Signup End -->
+
     <!-- Services -->
 
     <div id="ourServices" class="container section-title text-center">
@@ -658,7 +763,7 @@
                                         <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                     </div>
                                     <div class="submit">
-                                        <input type="submit" class="btn btn-info btn-fill" value="Contact Us" />
+                                        <input type="submit" class="btn btn-info btn-fill" value="Submit" />
                                     </div>
                                 </div>
                             </form>
@@ -667,7 +772,7 @@
                         <div class="col-md-3 col-md-offset-1">
                             <div class="contact-info">
                                 <h5><i class="fa fa-map-marker text-muted"></i> Lagos Office</h5>
-                                <p class="text-muted"> Outcom Place,<br> 36 Kadiri Street,<br> Alausa-Ikeja, Lagos.
+                                <p class="text-muted"> Outcom Place,<br> 16 Community Road,<br> off Allen Avenue, Ikeja, Lagos.
                                     <p class="text-muted"><i class="fa fa-phone text-muted"></i> 08174640007, 07042225334.
                                     </p>
                                 </p><br>
@@ -770,7 +875,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <p class="footer-contact-control">Outcom Place, 36 Kadiri Street, Alausa-Ikeja, Lagos.
+                                <p class="footer-contact-control">Outcom Place, 16 Community Road, off Allen Avenue, Ikeja, Lagos.
                                     <br>
                                     <strong>Phone:</strong> 08174640007, 07042225334.
                                 </p>
@@ -788,13 +893,15 @@
             <hr />
             <div class="social-area text-center">
                 <!-- <h5>follow us on</h5> -->
-                <a href="https://web.facebook.com/outcomtechsecure" target="_blank">
+                <a href="https://web.facebook.com/OuTechSecure" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <!-- <a href="#">
+
+                <a href="https://twitter.com/outcomtechnolo1" target="_blank">
                     <i class="fab fa-twitter"></i>
-                </a> -->
-                <a href="https://www.instagram.com/outcomtech" target="_blank">
+                </a>
+
+                <a href="https://www.instagram.com/outcomtechnologies/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -1000,6 +1107,7 @@
     <script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/signup.js"></script>
 
     <!--  Plugins -->
     <!-- <script src="assets/js/gsdk-checkbox.js"></script>
