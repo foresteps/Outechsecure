@@ -380,7 +380,8 @@ body {
     margin-top: 5px;
 }
 
-.form-control {
+
+/* .form-control {
     height: auto;
     font-size: 24px;
     border: 0;
@@ -392,7 +393,7 @@ body {
 
 .form-control {
     color: #d39e0c;
-}
+} */
 
 .subscribe-line-transparent-background {
     background-attachment: fixed;
