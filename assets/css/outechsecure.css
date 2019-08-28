@@ -486,6 +486,12 @@ textarea #mce-EMAIL {
 
 #mc-embedded-subscribe {}
 
+.subscribe-line .btn:not(.btn-lg) {
+    margin-top: 10px;
+    padding: 6px 12px;
+    width: 100% !important;
+}
+
 .newsletter {
     padding-top: 35px;
     background-color: #FFFFFF;
