@@ -427,7 +427,7 @@ body {
 }
 
 #mc_embed_signup {
-    margin: 15px 15px;
+    margin: none;
     background-color: transparent;
 }
 
