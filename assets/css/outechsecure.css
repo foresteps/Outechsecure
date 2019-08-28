@@ -522,25 +522,25 @@ textarea #mce-EMAIL {
     color: #9A9A9A;
 }
 
-#mce-EMAIL::-moz-placeholder {
+.form-control::-moz-placeholder {
     color: #d39e0c;
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
-#mce-EMAIL:-moz-placeholder {
+.form-control:-moz-placeholder {
     color: #d39e0c;
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
-#mce-EMAIL::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
     color: #d39e0c;
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
-#mce-EMAIL:-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
     color: #d39e0c;
     opacity: 1;
     filter: alpha(opacity=100);
