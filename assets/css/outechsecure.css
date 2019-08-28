@@ -428,12 +428,6 @@ body {
 
 #mc_embed_signup input.email {
     display: block;
-    background-color: transparent;
-    width: 100%;
-}
-
-#mce-EMAIL {
-    display: block;
     width: 100%;
     height: 34px;
     padding: 6px 12px;
@@ -451,37 +445,37 @@ body {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-#mce-EMAIL:focus {
+#mc_embed_signup input.email:focus {
     border-color: #d39e0c;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #d39e0c;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #d39e0c;
 }
 
-#mce-EMAIL::-moz-placeholder {
+#mc_embed_signup input.email::-moz-placeholder {
     text-align: center;
     color: #d39e0c;
     opacity: 1;
 }
 
-#mce-EMAIL:-ms-input-placeholder {
+#mc_embed_signup input.email:-ms-input-placeholder {
     text-align: center;
     color: #d39e0c;
 }
 
-#mce-EMAIL::-webkit-input-placeholder {
+#mc_embed_signup input.email::-webkit-input-placeholder {
     text-align: center;
     color: #d39e0c;
 }
 
-#mce-EMAIL[disabled],
-#mce-EMAIL[readonly],
+#mc_embed_signup input.emailL[disabled],
+#mc_embed_signup input.emailL[readonly],
 fieldset[disabled] .form-control {
     background-color: #eee;
     opacity: 1;
 }
 
-#mce-EMAIL[disabled],
+#mc_embed_signup input.email[disabled],
 fieldset[disabled] .form-control {
     cursor: not-allowed;
 }
