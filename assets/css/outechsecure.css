@@ -161,15 +161,15 @@ body {
 } */
 
 .btn-outline-secondary {
-    color: rgb(221, 221, 215);
-    background-color: rgb(107, 12, 96);
+    color: rgb(107, 12, 96);
+    background-color: transparent;
     background-image: none;
     border-color: rgb(107, 12, 96);
 }
 
 .btn-outline-secondary:hover {
-    color: rgb(107, 12, 96);
-    background-color: transparent;
+    color: rgb(221, 221, 215);
+    background-color: rgb(107, 12, 96);
     border-color: rgb(107, 12, 96);
 }
 
@@ -182,7 +182,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     border-radius: 0;
-    padding: 19px 30px;
+    padding: 20px 30px;
     height: 70px;
 }
 
