@@ -718,4 +718,36 @@ textarea #mce-EMAIL {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .btn-login-bar {
+        border-width: 2px;
+        background-color: rgb(107, 12, 96);
+        font-weight: 400;
+        opacity: 1;
+        filter: alpha(opacity=80);
+        padding: 8px 16px;
+        border-color: rgb(107, 12, 96);
+        color: rgb(221, 221, 215);
+    }
+    .btn-outline-secondary {
+        color: rgb(221, 221, 215);
+        background-color: rgb(107, 12, 96);
+        background-image: none;
+        border-color: rgb(107, 12, 96);
+    }
+    .btn-outline-secondary:hover {
+        color: rgb(107, 12, 96);
+        background-color: transparent;
+        border-color: rgb(107, 12, 96);
+    }
+    .btn-outline-secondary:focus,
+    .btn-outline-secondary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
+    .btn-xs {
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 0;
+        padding: 20px 30px;
+        height: 70px;
+    }
 }
